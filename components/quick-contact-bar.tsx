@@ -3,8 +3,8 @@ export function QuickContactBar() {
     <div className="bg-blue-500 text-white py-4 flex justify-center gap-8 flex-wrap px-4">
       <div className="flex items-center gap-2">
         <span>📞</span>
-        <a href="tel:01610000000" className="font-semibold hover:underline">
-          0161 000 0000
+        <a href="tel:07379590901" className="font-semibold hover:underline">
+          07379 590901
         </a>
       </div>
       <div className="flex items-center gap-2">

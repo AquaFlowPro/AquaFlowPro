@@ -15,8 +15,8 @@ export function Contact() {
               {
                 icon: "📞",
                 title: "Phone",
-                content: "0161 000 0000",
-                link: "tel:01610000000",
+                content: "07379 590901",
+                link: "tel:07379590901",
                 note: "Call now for immediate quotes",
               },
               {
