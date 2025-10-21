@@ -8,7 +8,7 @@ export function MaintenancePlans() {
       period: "/month",
       description: "Perfect for homeowners who want peace of mind",
       features: [
-        "1 annual service visit",
+        "Quarterly service visits",
         "Priority 24/7 call-out",
         "10% off all repairs",
         "10% off parts",
@@ -25,7 +25,7 @@ export function MaintenancePlans() {
       description: "Ideal for small businesses and landlords",
       badge: "⭐ MOST POPULAR",
       features: [
-        "Quarterly maintenance visits",
+        "Bi-monthly maintenance visits",
         "24/7 priority response",
         "15% off all repairs",
         "15% off parts",
