@@ -1,6 +1,6 @@
 interface ServiceCardProps {
-  icon: string
   title: string
+  image: string
   description: string
   priceFrom: string
   priceRange: string
@@ -10,19 +10,13 @@ interface ServiceCardProps {
   ctaLink: string
 }
 
-const getBackgroundImage = (title: string) => {
-  const imageMap: Record<string, string> = {
-    "Pump Installation": "/industrial-water-pump-installation-machinery.jpg",
-    "Pump Repairs": "/pump-repair-tools-and-equipment-maintenance.jpg",
-    "Booster Pumps": "/water-pressure-booster-pump-system.jpg",
-    "Sewage & Drainage": "/sewage-drainage-pump-system-underground.jpg",
-  }
-  return imageMap[title] || "/water-pump-equipment.jpg"
+const getBackgroundImage = (image: string) => {
+  return image || "/water-pump-equipment.jpg"
 }
 
 export function ServiceCard({
-  icon,
   title,
+  image,
   description,
   priceFrom,
   priceRange,
@@ -35,13 +29,12 @@ export function ServiceCard({
     <div className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all border-2 border-transparent hover:border-blue-500 relative overflow-hidden group">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity"
-        style={{ backgroundImage: `url('${getBackgroundImage(title)}')` }}
+        style={{ backgroundImage: `url('${getBackgroundImage(image)}')` }}
       />
 
       <div className="relative z-10">
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-900 to-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform" />
 
-        <span className="text-5xl block mb-4">{icon}</span>
         <h3 className="text-2xl font-bold text-blue-900 mb-4">{title}</h3>
         <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
 

@@ -1,34 +1,42 @@
+import Image from "next/image"
+
 export function Testimonials() {
   const testimonials = [
     {
       stars: 5,
       text: "Transparent pricing from the start—no surprises! They quoted £280 for a booster pump install, and that's exactly what I paid. Professional service and very tidy work.",
       author: "Mrs. H, Bury",
+      avatar: "/placeholder-user.jpg",
     },
     {
       stars: 5,
       text: "We're on the Pro Care plan and it's saved us thousands. Had two emergency call-outs this year—both free! The quarterly maintenance keeps everything running perfectly.",
       author: "Facilities Manager, Salford",
+      avatar: "/placeholder-user.jpg",
     },
     {
       stars: 5,
       text: "Best value for money in Greater Manchester. Emergency repair cost me £145 all-in when other companies wanted £300+. Honest, fair pricing.",
       author: "Mr. W, Bolton",
+      avatar: "/placeholder-user.jpg",
     },
     {
       stars: 5,
       text: "The £12/month home plan is brilliant value. Already used it twice this year and saved over £200 in call-out fees. Highly recommend!",
       author: "Homeowner, Stockport",
+      avatar: "/placeholder-user.jpg",
     },
     {
       stars: 5,
       text: "Free quote was detailed and accurate. The work was completed on time and on budget—exactly £650 as quoted. No trying to upsell unnecessary extras.",
       author: "Property Manager, Rochdale",
+      avatar: "/placeholder-user.jpg",
     },
     {
       stars: 5,
       text: "Commercial Platinum plan is worth every penny for our business. The remote monitoring has already prevented two major failures. ROI in year one!",
       author: "Business Owner, Wigan",
+      avatar: "/placeholder-user.jpg",
     },
   ]
 
@@ -49,7 +57,14 @@ export function Testimonials() {
               <div className="text-yellow-400 text-2xl mb-4">{"★".repeat(testimonial.stars)}</div>
               <p className="italic mb-6 text-lg leading-relaxed">{testimonial.text}</p>
               <p className="font-bold flex items-center gap-2">
-                <span>👤</span> {testimonial.author}
+                <Image
+                  src={testimonial.avatar}
+                  alt={testimonial.author}
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+                {testimonial.author}
               </p>
             </div>
           ))}

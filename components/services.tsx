@@ -3,8 +3,8 @@ import { ServiceCard } from "./service-card"
 export function Services() {
   const services = [
     {
-      icon: "🔧",
       title: "Pump Repairs",
+      image: "/pump-repair-tools-and-equipment-maintenance.jpg",
       description: "Fast fault diagnostics and expert repairs for all major brands. Same-day service often available.",
       priceFrom: "£100",
       priceRange: "£100–£400",
@@ -20,8 +20,8 @@ export function Services() {
       ctaLink: "#contact",
     },
     {
-      icon: "🏠",
       title: "Domestic Pump Installation",
+      image: "/residential-home-water-pump-system.jpg",
       description: "Professional installation of pressure boosters, well pumps, and water systems for homes.",
       priceFrom: "£250",
       priceRange: "£250–£700",
@@ -37,8 +37,8 @@ export function Services() {
       ctaLink: "#contact",
     },
     {
-      icon: "🏢",
       title: "Borehole & Well Systems",
+      image: "/industrial-water-pump-installation-machinery.jpg",
       description: "Complete borehole pump installations for deep wells, farms, and rural properties.",
       priceFrom: "£2,500",
       priceRange: "£2,500–£10,000+",
@@ -54,8 +54,8 @@ export function Services() {
       ctaLink: "#contact",
     },
     {
-      icon: "💧",
       title: "Water Filtration Systems",
+      image: "/water-tank-cleaning-disinfection-service.jpg",
       description: "Clean, safe water through professional filtration and purification installations.",
       priceFrom: "£180",
       priceRange: "£180–£900",
@@ -71,8 +71,8 @@ export function Services() {
       ctaLink: "#contact",
     },
     {
-      icon: "🚨",
       title: "Emergency Call-Outs",
+      image: "/sewage-drainage-pump-system-underground.jpg",
       description: "24/7 emergency response for pump failures, flooding, or water supply emergencies.",
       priceFrom: "£90",
       priceRange: "£90 call-out + £60–£120/hr labour",
@@ -85,11 +85,11 @@ export function Services() {
         "Priority for members",
       ],
       ctaText: "Call Emergency Line →",
-      ctaLink: "tel:01610000000",
+      ctaLink: "tel:07379590901",
     },
     {
-      icon: "🏗️",
       title: "Commercial & Agricultural",
+      image: "/commercial-building-water-pump-maintenance.jpg",
       description: "Large-scale solutions for farms, businesses, and industrial applications.",
       priceFrom: "£1,200",
       priceRange: "£1,200–£6,000+",

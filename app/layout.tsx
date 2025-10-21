@@ -10,10 +10,47 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aqua Flow Pro - Expert Pump Services | Greater Manchester | From £100",
+  metadataBase: new URL("https://aquaflowpro.github.io"),
+  title: "Expert Pump Services in Greater Manchester | Aqua Flow Pro",
   description:
-    "Professional pump installation, repair & maintenance from £100. Free quotes, transparent pricing, 24/7 emergency service across Greater Manchester.",
-  generator: "v0.app",
+    "Aqua Flow Pro offers professional pump installation, repair, and maintenance services in Greater Manchester. Get a free quote today for our 24/7 emergency services.",
+  keywords:
+    "pump installation, pump repair, pump maintenance, Greater Manchester, emergency pump service, Aqua Flow Pro",
+  openGraph: {
+    title: "Expert Pump Services in Greater Manchester | Aqua Flow Pro",
+    description:
+      "Aqua Flow Pro offers professional pump installation, repair, and maintenance services in Greater Manchester. Get a free quote today for our 24/7 emergency services.",
+    url: "https://aquaflowpro.github.io",
+    siteName: "Aqua Flow Pro",
+    images: [
+      {
+        url: "/industrial-commercial-pump-facility-equipment.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Industrial pump facility equipment",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Expert Pump Services in Greater Manchester | Aqua Flow Pro",
+    description:
+      "Aqua Flow Pro offers professional pump installation, repair, and maintenance services in Greater Manchester. Get a free quote today for our 24/7 emergency services.",
+    images: ["/industrial-commercial-pump-facility-equipment.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function RootLayout({
