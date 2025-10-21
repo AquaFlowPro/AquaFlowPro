@@ -9,8 +9,8 @@ export function Contact() {
           No obligation, no pressure—just honest advice and transparent pricing
         </p>
 
-        <div className="grid md:grid-cols-2 gap-16">
-          <div className="space-y-8">
+        <div className="flex justify-center">
+          <div className="space-y-8 max-w-lg">
             {[
               {
                 icon: "📞",
@@ -59,57 +59,6 @@ export function Contact() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="bg-white p-12 rounded-2xl shadow-xl">
-            <form className="space-y-6">
-              <div>
-                <label className="block text-blue-900 font-semibold mb-2">Name</label>
-                <input
-                  type="text"
-                  className="w-full p-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
-                />
-              </div>
-              <div>
-                <label className="block text-blue-900 font-semibold mb-2">Email</label>
-                <input
-                  type="email"
-                  className="w-full p-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
-                />
-              </div>
-              <div>
-                <label className="block text-blue-900 font-semibold mb-2">Phone</label>
-                <input
-                  type="tel"
-                  className="w-full p-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
-                />
-              </div>
-              <div>
-                <label className="block text-blue-900 font-semibold mb-2">Service Required</label>
-                <select className="w-full p-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors">
-                  <option>Select a service...</option>
-                  <option>Pump Repair</option>
-                  <option>New Installation</option>
-                  <option>Borehole System</option>
-                  <option>Emergency Call-Out</option>
-                  <option>Maintenance Plan</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-blue-900 font-semibold mb-2">Message</label>
-                <textarea
-                  rows={5}
-                  className="w-full p-4 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors resize-y"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-blue-900 to-blue-500 text-white py-4 rounded-lg text-lg font-bold hover:-translate-y-1 hover:shadow-xl transition-all"
-              >
-                Send Message
-              </button>
-            </form>
           </div>
         </div>
       </div>
