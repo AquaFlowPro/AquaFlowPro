@@ -106,7 +106,7 @@ export function PricingTable() {
           Transparent pricing you can trust. All prices include VAT and are accurate as of 2025.
         </p>
 
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr className="bg-gradient-to-r from-blue-900 to-blue-500 text-white">

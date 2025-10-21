@@ -5,8 +5,8 @@ import Image from "next/image"
 export function Header() {
   return (
     <header className="bg-gradient-to-br from-blue-900 to-blue-500 text-white py-1 sticky top-0 z-50 shadow-lg">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-8">
-        <div className="flex items-center gap-2 text-2xl font-bold tracking-wide">
+      <nav className="max-w-7xl mx-auto flex justify-center md:justify-between items-center px-8">
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold tracking-wide">
           <Image
             src="/AquaFlowProImages/Minimalist Wordmark Logo for Aqua Flow Pro.png"
             alt="Aqua Flow Pro Logo"
