@@ -11,13 +11,13 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aquaflowpro.github.io"),
-  title: "Expert Pump Services in Greater Manchester | Aqua Flow Pro",
+  title: "Aqua Flow Pro | Expert Pump Services in Greater Manchester",
   description:
     "Aqua Flow Pro offers professional pump installation, repair, and maintenance services in Greater Manchester. Get a free quote today for our 24/7 emergency services.",
   keywords:
     "pump installation, pump repair, pump maintenance, Greater Manchester, emergency pump service, Aqua Flow Pro",
   openGraph: {
-    title: "Expert Pump Services in Greater Manchester | Aqua Flow Pro",
+    title: "Aqua Flow Pro | Expert Pump Services in Greater Manchester",
     description:
       "Aqua Flow Pro offers professional pump installation, repair, and maintenance services in Greater Manchester. Get a free quote today for our 24/7 emergency services.",
     url: "https://aquaflowpro.github.io",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expert Pump Services in Greater Manchester | Aqua Flow Pro",
+    title: "Aqua Flow Pro | Expert Pump Services in Greater Manchester",
     description:
       "Aqua Flow Pro offers professional pump installation, repair, and maintenance services in Greater Manchester. Get a free quote today for our 24/7 emergency services.",
     images: ["/industrial-commercial-pump-facility-equipment.jpg"],
@@ -60,6 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/AquaFlowProImages/Minimalist Wordmark Logo for Aqua Flow Pro.png" type="image/png" />
+      </head>
       <body className={`font-sans antialiased`}>
         <Header />
         {children}
